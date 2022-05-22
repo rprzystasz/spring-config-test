@@ -1,0 +1,14 @@
+server.port: 8080
+
+spring:
+  config.import: configserver:http://localhost:8888
+  application:
+    name: "spring-config-client"
+
+configuration:
+  key1: 'default-value-1'
+  key2: 'default-value-2'
+  key3: 'default-value-3'
+  key4: 'default-value-4'
+  key5: 'default-value-5'
+  key6: 'default-value-6'
